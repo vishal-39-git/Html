@@ -1,0 +1,190 @@
+<html>
+<head>
+  <title>Top 5 Resorts in Goa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-panel {
+      flex: 2;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .review-score {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filter-options {
+      margin-top: 10px;
+    }
+
+    .resort-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .resort-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+    .resort-item img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .resort-info {
+      flex: 1;
+    }
+
+    .resort-review {
+      text-align: right;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+    }
+
+    .rating-square {
+      width: 20px;
+      height: 20px;
+      background-color: #164ee7;
+      margin-right: 5px;
+      border-radius: 4px;
+    }
+
+    .high-rated-resorts {
+      margin-top: 20px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-panel">
+      <h1>Top 5 Resorts in Goa</h1>
+      <div class="filter-section">
+        <div class="review-score">
+          <label>Filter by:</label>
+        </div>
+        <div class="filter-options">
+          <label for="filter">review score:</label>
+          <input type="radio" name="filter" value="superb"> Superb 9+<br>
+          <input type="radio" name="filter" value="very-good"> Very Good 8+<br>
+          <input type="radio" name="filter" value="good"> Good 7+<br>
+          <input type="radio" name="filter" value="pleasant"> Pleasant 6+<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="resort-list">
+        <div class="resort-item">
+          <img src="resort1.jpg" alt="Resort 1">
+          <div class="resort-info">
+            <h2>w Goa</h2>
+            <p>In tropical gardens near a beach, this opulent hotel is a 7-minute walk from the ruins of Chapora Fort and 44 km from Goa International Airport.</p>
+          </div>
+          <div class="resort-review">
+            <div class="rating-square"></div>
+            <p>Superb 9+</p>
+          </div>
+        </div>
+        <div class="resort-item">
+          <img src="resort2.jpg" alt="Resort 2">
+          <div class="resort-info">
+            <h2>Taj Exotica Resort </h2>
+            <p>Set on 23 lush hectares overlooking the Arabian Sea, this posh hotel on Benaulim Beach is 5 km from the Goa Chitra ethnographic museum.</p>
+          </div>
+          <div class="resort-review">
+            <div class="rating-square"></div>
+            <p>Very Good 8+</p>
+          </div>
+        </div>
+        <div class="resort-item">
+          <img src="resort3.jpg" alt="Resort 3">
+          <div class="resort-info">
+            <h2>ITC Grand Goa</h2>
+            <p>On a leafy 18-hectare property dotted with palm trees, this upmarket resort with direct access to Arossim Beach is 7 km from Three Kings Chapel and 16 km from Goa International Airport.</p>
+          </div>
+          <div class="resort-review">
+            <div class="rating-square"></div>
+            <p>Superb 9+</p>
+          </div>
+        </div>
+        <div class="resort-item">
+          <img src="resort4.jpg" alt="Resort 4">
+          <div class="resort-info">
+            <h2>ITC Grand Goa</h2>
+            <p>On a leafy 18-hectare property dotted with palm trees, this upmarket resort with direct access to Arossim Beach is 7 km from Three Kings Chapel and 16 km from Goa International Airport.</p>
+          </div>
+          <div class="resort-review">
+            <div class="rating-square"></div>
+            <p>Very Good 8+</p>
+          </div>
+        </div>
+        <div class="resort-item">
+          <img src="resort5.jpg" alt="Resort 5">
+          <div class="resort-info">
+            <h2>The LaLiT Golf & Spa Resort Goa</h2>
+            <p>Warm, refined suites offer minibars, free Wi-Fi and flat-screens, as well as sitting areas, and tea and coffeemaking equipment.</p>
+          </div>
+          <div class="resort-review">
+            <div class="rating-square"></div>
+            <p>Superb 9+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
