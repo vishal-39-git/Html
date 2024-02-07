@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #0c72c5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0c66ec;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <h2>User Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var mobile = document.getElementById("mobile").value;
+
+            // Check for null values
+            if (username === "" || password === "" || mobile === "") {
+                alert("All fields are required");
+                return false;
+            }
+
+            // Check if username contains only alphabets
+            if (!/^[a-zA-Z]+$/.test(username)) {
+                alert("Username should contain only alphabets");
+                return false;
+            }
+
+            // Check if mobile number is 10 digits long
+            if (!/^\d{10}$/.test(mobile)) {
+                alert("Mobile number should be of 10 digits");
+                return false;
+            }
+            // If all validations pass, return true to submit the form
+            return true;
+        }
+    </script>
+</body>
+</html>
